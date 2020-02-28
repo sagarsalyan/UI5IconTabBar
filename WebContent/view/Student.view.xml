@@ -1,0 +1,91 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:ca="sap.ca.ui" xmlns:f="sap.ui.layout.form" xmlns:comm="sap.ui.commons"
+	xmlns:l="sap.ui.layout" xmlns="sap.m"
+	controllerName="com.peol.firstProject.view.Student"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="ID_PG_DETAIL_PAGE" title="{i18n>student}"
+		enableScrolling="false" showNavButton="true" class="sapUiSizeCompact"
+		navButtonPress="handleBack">
+		<content>
+			
+			<IconTabBar
+				id="idIconTabBar"
+				select="handleIconTabBarSelect"
+				class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter
+						showAll="true"
+						text="Student"
+						key="All" />
+						
+					<IconTabSeparator />
+					
+					<IconTabFilter
+						icon="sap-icon://hr-approval"
+						iconColor="Positive"
+						text="Distiction"
+						key="distinction" />
+						
+					<IconTabFilter
+						icon="sap-icon://user-edit"
+						iconColor="Critical"
+						
+						text="Average"
+						key="average" />
+					<IconTabFilter
+						icon="sap-icon://employee-rejections"
+						iconColor="Negative"
+						
+						text="Poor"
+						key="poor" />
+				</items>
+			</IconTabBar>
+			<ScrollContainer
+					height="80%"
+					width="100%"
+					horizontal="true"
+					vertical="true"
+					focusable="true">
+			<Table id="idStudentTable"
+				items="{
+					path:'/students'
+				}">
+				
+				<columns>
+					<Column>
+						<Text text="Name" />
+					</Column>
+					<Column>
+						<Text text="Class" />
+					</Column>
+					<Column>
+						<Text text="Mark" />
+					</Column>
+					
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text
+								text="{name}" />
+							<Text
+								text="{class}" />
+							<Text
+								text="{mark}" />			
+							
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			</ScrollContainer>
+		
+		
+			   
+		</content>
+		<footer>
+			<Toolbar id="ID_FOOTER">
+				<ToolbarSpacer />
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

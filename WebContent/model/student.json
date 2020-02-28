@@ -1,0 +1,24 @@
+{
+	"students":[
+		{
+			"name":"Sagar",
+			"class":"MCA",
+			"mark":30
+		},
+		{
+			"name":"Sagar",
+			"class":"MCA",
+			"mark":30
+		},
+		{
+			"name":"Saheem",
+			"class":"BE",
+			"mark":60
+		},
+		{
+			"name":"Praveen",
+			"class":"MCA",
+			"mark":100
+		}
+	]
+}

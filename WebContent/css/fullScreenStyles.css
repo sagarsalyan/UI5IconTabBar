@@ -1,0 +1,55 @@
+.navTableControlLayout {
+    padding: 1rem 2rem 0 2rem;
+}
+.sap-tablet .navTableControlLayout {
+    padding: 1rem 1rem 1rem 1rem;
+}
+.sap-phone .navTableControlLayout {
+    padding: 0 0 0 0;
+}
+.navTableItemLayout {
+    min-height: 5rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.sap-desktop{
+	overflow-y:hidden !important;
+}&nbsp;
+
+.sapUiFormTitleH3 {
+    display: block!important;
+}
+.scrollFUpload{
+	width:12rem!important;
+}
+.scrollFUploadView{
+	width:40rem!important;
+}
+/*comments padding*/
+.sapMFeedListShowSeparatorsAll .sapMFeedListItem {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    
+}
+.sapMFeedListItemTextText > .sapMLnk.sapMLnkDsbl, .sapMFeedListItemTextName > .sapMLnk.sapMLnkDsbl, .sap-desktop .sapMFeedListItemTextName > .sapMLnk.sapMLnkDsbl:hover {
+    opacity: 1;
+    color: #902349;
+}
+
+/*for fileUploder*/ 
+.sapUiTf{
+	margin-top: 0.2rem;
+	min-height: 1.6rem;
+}
+.sapUiBtn {
+	min-height: 1.6rem;
+}
+/* for Link Space */
+.sapUiSizeCompact .sapMTBShrinkItem,.sapUiSizeCondensed .sapMTBShrinkItem
+	{
+	min-width: 1rem !important;
+}
+/*sapce between level in dialog*/
+.sapSpaceBtwnLevel {
+    margin-left: .5rem;
+}
